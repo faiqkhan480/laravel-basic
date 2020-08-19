@@ -1,0 +1,113 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    /*align-items: center;*/
+    display: flex;
+    justify-content: center;
+    /*flex-direction: column;*/
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+input[type="text"], textarea {
+    font: 15px/24px 'Nunito', sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    resize: none;
+}
+:focus{outline: none;}
+
+.wrap{
+    /*float: left; */
+    margin: 40px 3%;
+    /*position: relative;*/
+}
+
+.effect-10 {
+    border: 0;
+    padding: 7px 15px;
+    border: 1px solid #ccc;
+    position: relative;
+    background: transparent;
+}
+
+.effect-10 ~ .focus-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.effect-10:focus ~ .focus-bg {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.myButton {
+    background-color:transparent;
+    /*border:1px solid #636b6f;*/
+    border:1px solid #ccc;
+    display:inline-block;
+    cursor:pointer;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-weight: 600;
+    padding:11px 23px;
+    text-decoration:none;
+}
+.myButton:hover {
+    background-color:transparent;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
