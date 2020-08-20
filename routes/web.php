@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 // Listing Blogs
-Route::get('/app', 'blogController@show');
+Route::get('/app', 'p@show');
 
 // To get Form
 Route::get('/get_form', 'formController@getForm');
@@ -36,3 +36,6 @@ Route::get('/about/{id}', function ($id) {
 Route::get('/contact', function () {
     return view('pages.contact')->with('name', 'Contact Us');
 });
+
+// To get Form
+Route::get('/jobs', 'jobController@fetchJobs');

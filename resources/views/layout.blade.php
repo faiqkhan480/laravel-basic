@@ -13,17 +13,12 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            @yield('name') Page
+            @yield('page_name')
         </div>
 
         <div>
-            <h3>
-                @yield('blogTitle')
-            </h3>
-        </div>
-
-        <div>
-            @yield('content')
+            @section('list_jobs')
+            @show
         </div>
     </div>
 </div>
